@@ -204,3 +204,10 @@ main,main.reference-stage,main.learning-stage,main.conditioning-stage,main.moodb
  .style-case .case-figure{grid-template-rows:auto auto}.style-case .case-figure img{height:auto;aspect-ratio:1507/966}
  .style-case .case-figure figcaption{font-size:9px;flex-wrap:wrap}
 }
+
+/* Round the visible picture edges, including cropped images and teaching panels. */
+:root{--image-radius:14px}
+.slide img,#viewer img{border-radius:var(--image-radius)}
+.slide .crop,.slide .learning-art{border-radius:var(--image-radius);overflow:hidden}
+.slide .crop img{border-radius:0}
+@media(max-width:850px){:root{--image-radius:10px}}
