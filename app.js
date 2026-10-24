@@ -25,7 +25,7 @@ function moodboardSlide(d) {
 }
 
 function render(){const d=slides[index];let cls='',inside='';
-if(d.src===1){cls='hero';inside=title({...d,title:'',body:'参数、风格参考与原创设计\n从真实样例中，建立自己的视觉判断。'},'用对照实验<br>选定<em>美术方向</em>')+`<div class="visual">${crop(slides.find(x=>x.src===30).images[0],.007,.008,.82,.50)}<div class="caption"><span>原创群像 · BRONZEWAKE</span><b>观察 / 比较 / 再测试</b></div></div>`;}
+if(d.src===1){cls='hero hero-panorama wide';inside=`<div class="hero-head"><div><p class="eyebrow">MIDJOURNEY / ART DIRECTION LAB</p><h1>用对照实验<br>选定<em>美术方向</em></h1></div><div class="hero-intro"><span class="hero-number">01 / 33</span><p>参数、风格参考与原创设计<br>从真实样例中，建立自己的视觉判断。</p><span class="hero-method">观察 / 比较 / 再测试</span></div></div><figure class="hero-art"><img src="assets/hero-landscape.png" width="3376" height="1265" alt="紫蓝色云海与巨型山岩之间，一名旅人沿桥走向远方的建筑" data-full="assets/hero-landscape.png" fetchpriority="high" decoding="async"><figcaption><span>美术方向对照实验 · 场景概念设计</span><span>查看完整图片 ↗</span></figcaption></figure>`;}
 else if(d.src===20){cls='reference-focus';inside=title(d)+visual(d);}
 else if(d.src===14){cls='learning-focus';inside=learningSlide(d);}
 else if([21,22,23].includes(d.src)){cls='experiment';let right=d.src===22?.24:.20,labels=d.src===21?['Standard','Raw']:['Stylize 300','Stylize 0'];inside=title({...d,subtitle:'',body:d.body},`${esc(d.title).replace(/\n/g,'<br>')}<br><em>实验 ${esc(d.subtitle)}</em>`)+`<div class="visual">${[0,1].map((j)=>`<div class="compare-item"><div class="compare-label"><span>${labels[j]}</span><small>${d.src===21?'Stylize 100':d.src===22?'Raw':'Standard'}</small></div>${crop(d.images[0],0,j*.5,right,j===0?.5:0)}</div>`).join('')}<div class="caption"><span>本组样例观察，不代表固定结果</span><b>点击放大原图 ↗</b></div></div>`;}
