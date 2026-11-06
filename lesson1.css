@@ -243,3 +243,50 @@ div.look-questions>button.on{background:#2a2440;border-color:var(--lime)}
 .layer-switch button.on{color:#1c1928;background:var(--lime);border-color:var(--lime)}
 .slide .visual>.look-media::after{content:none}
 @media(max-width:850px){.look-media{aspect-ratio:2000/853}.look-media img{width:100%}}
+
+/* v12 — 第一课修改：为什么讲 MJ、账号、研究拆页、截图页 */
+.slide.why-mj,.slide.mj-plan,.slide.research-summary{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto minmax(0,1fr) auto;align-items:stretch;gap:clamp(16px,2.4vh,30px)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,36px);min-height:0}
+.why-grid section{border:1px solid #44495a;border-radius:14px;background:#171b26;padding:clamp(18px,2vw,36px);display:flex;flex-direction:column;justify-content:center}
+.why-grid section.main{border-color:var(--lime);background:#2a2440}
+.why-grid span{color:var(--lime);font-size:clamp(12px,.95vw,18px);letter-spacing:.06em}
+.why-grid h2{margin:clamp(10px,1.6vh,18px) 0 clamp(12px,2vh,24px);font-size:clamp(26px,2.8vw,56px);letter-spacing:-.03em}
+.why-grid p{margin:0 0 clamp(6px,1.2vh,12px);color:#c1c3cc;font-size:clamp(14px,1.25vw,24px);line-height:1.6}
+.plan-stats{margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.2vw,22px);min-height:0}
+.plan-stats div{border:1px solid #44495a;border-radius:12px;background:#171b26;padding:clamp(16px,1.6vw,30px);display:flex;flex-direction:column;justify-content:center;gap:clamp(8px,1.4vh,16px)}
+.plan-stats dt{color:var(--lime);font-size:clamp(34px,4.2vw,84px);letter-spacing:-.03em;line-height:1.1}
+.plan-stats dd{margin:0;color:#c1c3cc;font-size:clamp(14px,1.25vw,24px);line-height:1.5}
+.plan-share{margin:0;border-radius:12px;background:#2a2440;border:1px solid var(--lime);padding:clamp(12px,2vh,24px) clamp(16px,1.6vw,30px);font-size:clamp(16px,1.5vw,28px)}
+.plan-share b{color:var(--lime);margin-right:clamp(12px,1.4vw,28px);font-weight:600}
+.summary-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.summary-list li{display:grid;grid-template-columns:clamp(40px,4vw,80px) minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(12px,1.6vw,30px);align-items:baseline;border-bottom:1px solid #3b3f52;padding:clamp(14px,3vh,36px) 0}
+.summary-list span{color:var(--muted);font-size:clamp(12px,.95vw,18px);letter-spacing:.1em}
+.summary-list h2{margin:0;color:var(--lime);font-size:clamp(20px,2vw,40px);letter-spacing:-.02em}
+.summary-list p{margin:0;color:#c1c3cc;font-size:clamp(15px,1.4vw,27px);line-height:1.6}
+.summary-foot{margin:0;color:#c1c3cc;font-size:clamp(13px,1.1vw,21px)}
+.summary-foot b{color:var(--lime);font-weight:600;margin-right:clamp(10px,1.2vw,24px)}
+.slide.research-output{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)!important;align-items:center;gap:clamp(20px,3vw,60px)}
+.output-text h1{margin:0 0 clamp(16px,3vh,32px);font-size:clamp(30px,min(3.4vw,6vh),68px);line-height:1.15}
+.output-flow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:clamp(6px,1.2vh,12px);font-size:clamp(14px,1.2vw,23px)}
+.output-flow li:not(:first-child)::before{content:"→ ";color:var(--lime)}
+.slide.research-output .task-prompt{margin:0;padding:clamp(16px,1.8vw,32px)}
+.slide.research-output .task-prompt p{max-height:none;font-size:clamp(14px,1.2vw,23px);line-height:1.75}
+.slide.mj-shot{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto minmax(0,1fr) auto;align-items:stretch;gap:clamp(10px,1.6vh,20px)}
+.slide.mj-shot .open-head h1{margin-bottom:clamp(4px,.8vh,10px)}
+.slide.mj-shot .visual{min-height:0}
+.slide.mj-shot .reference-link{margin-left:12px}
+.shot-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,1vw,18px);font-size:clamp(13px,1.05vw,20px)}
+.shot-steps b{color:var(--lime);font-weight:500;margin-right:10px}
+@media(max-width:850px){
+ .why-grid,.plan-stats,.shot-steps{grid-template-columns:1fr}
+ .summary-list li{grid-template-columns:1fr}
+ .slide.research-output{grid-template-columns:1fr!important}
+ .slide.mj-shot .media{min-height:180px}
+}
+.sites-table td{padding:clamp(4px,.9vh,12px) 14px}
+.sites-table td:first-child{width:22%}
+.sites-table td:last-child{width:22%}
+.sites-table a{padding:3px 10px}
+.site-chip{margin:2px 8px 2px 0}
+.slide.sites{gap:clamp(8px,1.4vh,18px)}
+.slide.sites .sites-steps li{padding:8px 14px}

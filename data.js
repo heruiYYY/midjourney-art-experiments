@@ -46,7 +46,7 @@ window.LOOK_ANNOT={
   ['e',990,712,110,38,'y'],['t',1110,670,'中景：人群 + 红色恐龙骨架'],
   ['t',720,60,'远景：巨骨与洞壁，带一点冷色']]
 ]};
-window.CHAPTERS=['开场','参考与研究','模型与参数','对照实验','风格与原创','收尾'];
+window.CHAPTERS=['开场','参考与研究','模型与参数','对照实验','风格','收尾'];
 window.NIJI_PROMPTS=[
 ['角色 01','A young female courier in a rain-soaked Eastern fantasy city, oiled-paper umbrella, layered indigo coat with brass buckles, a small mechanical bird on her shoulder, full body, standing pose, soft rim light, clean background --ar 3:4'],
 ['角色 02','An old swordsmith with a scarred face and braided grey beard, leather apron over a faded red robe, holding a glowing unfinished blade, half body portrait, warm forge light, dark background --ar 3:4'],
@@ -54,19 +54,24 @@ window.NIJI_PROMPTS=[
 ['场景 02','An abandoned subway station overgrown with plants, shafts of light from a broken ceiling, a lone child in a red scarf on the platform, cinematic wide angle, quiet mood --ar 16:9']];
 window.COURSE=[
 {src:'open-cover',kind:'open-cover',title:'AI 视频生成 · 课程封面',chapter:'开场',images:[],notes:'开场 1/5：课程封面。\n一句话介绍：这门课用六节课，带大家把一个想法做成视觉统一、故事基本连贯的 AI 短片。'},
-{src:'open-film',kind:'open-film',title:'先看一部成片',chapter:'开场',images:[],video:'assets/opening-film.mp4',notes:'开场 2/5：播放自己的 AI 短片《陆川》（约 55 秒）。\n不急着讲方法，先让大家看到六节课最后能做出什么。'},
+{src:'open-film',kind:'open-film',title:'先看一部成片',chapter:'开场',images:[],video:'assets/opening-film.mp4?v=3',notes:'开场 2/5：播放自己的 AI 短片《陆川》（约 55 秒）。\n不急着讲方法，先让大家看到六节课最后能做出什么。'},
 {src:'open-roadmap',kind:'open-roadmap',title:'六节课路线图',chapter:'开场',images:[],notes:'开场 3/5：六节课是一条完整制作流程。\n今天在第一步：明确方向、找参考、学会判断。后面的角色、场景、镜头都建立在今天选定的美术方向上。'},
 {src:'open-idea',kind:'open-idea',title:'生成很便宜，判断才值钱',chapter:'开场',images:[],notes:'开场 4/5：核心观念。\n左：只写一个基础词，得到的是模型的默认审美。\n右：有参考、有情绪板、经过对照筛选，画面才开始有方向。\nAI 让出图变得很便宜，真正决定作品质量的是你的选择和判断。'},
 {src:'open-today',kind:'open-today',title:'今天的流程',chapter:'开场',images:[],notes:'开场 5/5：今天三小时的安排和最后要带走的东西。\n收尾时回到这一页，检查是否做到。'},
 pick(1,{chapter:'开场',title:'第 1 节 · 用对照实验选定美术方向'}),
+{src:'why-mj',kind:'why-mj',title:'今天为什么讲 Midjourney',chapter:'开场',images:[],notes:'今天主要讲解 Midjourney，让大家探索一下 AI 生成的魅力。\nMJ 的审美是目前大家公认的第一。原因是模型的底子：训练数据中有大量设计类图片，设计感很强。\n\n不是说 GPT Image、Nano Banana 或者即梦生成的图片不好，只是这几个模型训练的图片集更广。GPT Image 可以生成非常真实的图片，几乎分不出真假，写实照片、3D 模型、LOGO 都十分优秀；但要用它生成非常有设计感、艺术变化比较大的图片，是有一定门槛的。\n\n后面会教大家怎么用 GPT 生成图片。可以先说一点：GPT Image 不仅是一个图片模型，同时也是一个语言大模型，背后会根据你的话进行思考。'},
+{src:'mj-plan',kind:'mj-plan',title:'账号：几个人合买',chapter:'开场',images:[],notes:'MJ 相对其他几个模型算是最便宜的。开一个月 30 美元的 Standard 账号，用完 15 小时快速额度后，还可以继续无限生成图片（Relax 慢速模式，需要排队）。\n大家都是学生，前期不用在这上面花很多钱，可以自己组合一下，每 3–6 个人均摊。一个月 200 块左右：6 个人每人约 35 元，3 个人每人约 70 元。\n\n接下来现场演示：MJ 的生成很简单，可以和大家对比一下。\n\n套餐信息 2026 年 11 月核对自 Midjourney 官网，上课前可以再看一眼 midjourney.com/pricing。'},
 divider('01','参考与研究','先明确视觉问题，再去找参考。','约 35 分钟','参考与研究'),
-{src:'sites',kind:'sites',title:'按问题找参考',chapter:'参考与研究',live:true,images:[],notes:'网站总览：按「我要解决什么问题」选网站，逐个点开现场演示。\n每个网站约 2 分钟，固定四步：\n① 搜什么关键词\n② 怎么筛选\n③ 怎么收藏 / 保存\n④ 记下出处和借用点\n\n网站名旁边的「截图」按钮可以打开该网站的截图，网络不好时备用。'},
+{src:'sites',kind:'sites',title:'按问题找参考',chapter:'参考与研究',live:true,images:[],notes:'网站总览：按「我要解决什么问题」选网站，逐个点开现场演示。\n每个网站约 2 分钟，固定四步：\n① 搜什么关键词\n② 怎么筛选\n③ 怎么收藏 / 保存\n④ 记下出处和借用点\n\n网站名旁边的「截图」按钮可以打开该网站的截图，网络不好时备用。\n\n设计类的网站想看好的内容，部分需要特殊网络环境。大家上网多的话，可以多去接触了解一下，也可以相互帮助。\n国内的花瓣、站酷、小红书这些也可以，但有能力的还是推荐去看顶尖的设计类网站。审美是需要积累的。\nB 站上也有很多人把 ArtStation 的作品整理剪辑成视频，这种也可以多关注。'},
 look('01','构图与视线','好看的画面，先让眼睛知道往哪看。',['主体在哪里？','视线从哪里进入，最后停在哪里？','画面里有哪些线在引导视线？'],'assets/look-01-subway.jpg','示例：废弃地铁站。\nQ1 主体：自动售货机旁蹲坐的小孩。人物很小，但旁边是全画面最暖、最亮的售货机灯光，眼睛会先落到这里。\nQ2 视线：从左前景虚化的暗色柱子进入，沿站台地面和顶部拱梁一路推向隧道深处那一点灯光；右侧墙上的暖色光斑和影子形成第二个停留点。\nQ3 引导线：拱梁、顶灯一排排排列、地砖接缝和站台边缘，全部汇向隧道口的消失点，是典型的一点透视。\n可以带走的结论：主体不一定要大，用最强的明暗或冷暖对比把它「点亮」，再用透视线把视线送过去。'),
 look('02','明暗与色彩','明暗分出主次，色彩控制情绪。',['最亮和最暗的地方在哪里？','主色、辅色、点缀色大概是什么比例？','冷暖关系怎样拉开空间？'],'assets/look-02-snow-station.jpg','示例：雪原科考站。\nQ1 明暗：最亮是被夕阳照到的雪坡和建筑底部的暖橙色受光面；最暗是画面下方的前景雪地和上下黑边。亮部集中在中间一条带上，把建筑托出来。\nQ2 色彩比例：大约 60% 蓝紫（天空、阴影雪面）、30% 粉橙（受光雪面）、10% 红（天线、窗框、门口的箱子）。红色面积很小，却刚好落在建筑和人物身上。\nQ3 冷暖：阴影全是冷的蓝紫，受光面全是暖的粉橙，冷暖交替一层层往后推；远处雪原颜色变浅变灰，空间就拉开了。\n可以带走的结论：先定一个主色调，再用少量对比色点在主体上。'),
 look('03','疏密、尺度与纵深','有密有疏、有大有小，画面才有呼吸。',['哪里密，哪里留白？','最大和最小的物体分别是什么？','前景、中景、远景怎样分层？'],'assets/look-03-bone-hall.jpg','示例：巨型骨骸大厅。\nQ1 疏密：细节最密的是底部的人群和两侧岩壁里的小房子；巨大骨骸本身是大块面、少细节，大厅中间的地面是亮的留白，让人群和骨骸都能「透气」。\nQ2 尺度：最大的是占满画面上半部的巨兽骨骸；最小的是底部密密麻麻的人群。极大和极小放在一起，尺度感立刻出来。\nQ3 分层：前景是左右两侧压暗的展示柜（框住画面）；中景是人群和中间的红色恐龙骨架；远景是巨骨和洞壁。前景暗、中景亮、远景带一点冷色和雾气。\n可以带走的结论：想让东西显得巨大，就在旁边放一个很小的参照物，再用前景把画面框住。'),
-pick(13,{image:'assets/visual-analysis.jpg',notes:'AI 对话融入日常学习\n先准备一批顶级概念设计图，用 GPT 分析为什么好看，再生成可测试的提示词。\n\n任务原文：\n分析研究我 eagle 中这个星标文件夹的图片，你需要分析这些顶级的概念设计概念设计图，你需要完全的分析和研究一下这些顶级的概念设计概念设计图为什么具有美感。\n\n1、你需要从造型、构图、纵深、配色、摄像机透视、画面对比度、明度、饱和度、疏密对比、氛围、空气透视、近大远小、极小的物体和极大的物体、反差感等这些元素上进行研究和分析。\n\n2、你需要分析场景顶级概念设计图的核心因素、优点是什么。\n3、最后你需要生成一份研究报告，并且举一反三，使用提示词技能生成10套提示词。'}),
+{src:'research-summary',kind:'research-summary',title:'总结：一张图为什么好看',chapter:'参考与研究',images:[],notes:'总结刚才三张图，只放文字。\n之后看任何参考图，都可以按这些问题拆一遍。'},
+{src:'research-output',kind:'research-output',title:'没有想法时，用语言大模型推演画面',chapter:'参考与研究',live:true,images:[],prompt:'你去 artstation 搜索一下，你需要分析这些顶级的概念设计图，你需要完全的分析和研究一下这些顶级的概念设计图为什么具有美感。\n研究对象：ArtStation 等来源；《阿凡达》《战斗天使》《变形金刚》等电影概念设计。\n研究重点：构图、纵深、配色、透视、对比度、明度、饱和度、疏密、氛围、空气透视、尺度反差；设计核心与优点。\n交付要求：研究报告；\n10 套适用于 MJ 的英文提示词。',notes:'这一页要教的是：没有想法的时候，使用语言类大模型工具来进行画面推演。\n现场演示：把任务原文发给语言大模型，看它怎样分析、怎样快速产出提示词，再把提示词带回 Midjourney 测试。\n\n任务原文：\n你去 artstation 搜索一下，你需要分析这些顶级的概念设计图，你需要完全的分析和研究一下这些顶级的概念设计图为什么具有美感。\n研究对象：ArtStation 等来源；《阿凡达》《战斗天使》《变形金刚》等电影概念设计。\n研究重点：构图、纵深、配色、透视、对比度、明度、饱和度、疏密、氛围、空气透视、尺度反差；设计核心与优点。\n交付要求：研究报告；\n10 套适用于 MJ 的英文提示词。'},
 divider('02','模型与参数','知道模型怎样工作，才知道参数在改什么。','约 20 分钟','模型与参数'),
-pick(14),pick(16),pick(17),pick(18),pick(19,{live:true,title:'Niji 7 与 V7、V8'}),
+pick(14),
+{src:'mj-explore',kind:'mj-shot',title:'先逛 Explore',head:'先逛 <em>Explore</em>',eyebrow:'MIDJOURNEY / EXPLORE',lead:'打开 Midjourney，先看大家都在生成什么。还没订阅也能浏览。',image:'assets/mj-explore.jpg',alt:'Midjourney Explore 页面，瀑布流展示社区作品',link:'https://www.midjourney.com/explore',chapter:'模型与参数',live:true,images:[],notes:'现场打开 Explore，带大家看一下风格的跨度：写实人像、插画、3D、毛毡质感都有。\n左侧栏后面都会用到：Create 生成，Personalize 和 Moodboards 在风格章节讲。'},
+pick(16,{notes:by[16].notes+'\n\n'+by[17].notes}),pick(18),pick(19,{live:true,title:'Niji 7 与 V7、V8'}),
 {src:'niji-prompts',kind:'niji-prompts',title:'测试提示词',chapter:'模型与参数',live:true,images:[],notes:'Niji 7 与 V7、V8 现场测试用：角色、场景各两组。\n同一条提示词分别加 --niji 7、--v 7、--v 8 生成，并排比较。\n提示词里不写艺术家名字和风格词，让模型自身的默认倾向更容易看出来。\n\n'+window.NIJI_PROMPTS.map(p=>p[0]+'\n'+p[1]).join('\n\n')},
 divider('03','对照实验','固定条件，只改一个变量，再下判断。','约 40 分钟 · 现场生成','对照实验'),
 pick(20),
@@ -75,12 +80,14 @@ pick(21,{live:true,title:'Stylize 默认（100）下\nStandard 与 Raw 的区别
 pick(22,{live:true,title:'Raw 格式下\n更改 Stylize 数值\n会有什么变化'}),
 pick(23,{live:true,title:'Standard 格式下\n更改 Stylize 数值\n会有什么变化'}),
 pick(24),
-divider('04','风格与原创','用图像建立视觉倾向，再回到原创设计。','约 45 分钟','风格与原创'),
-pick(25),pick(26),pick(27,{live:true}),pick(28),pick(29),pick(30),pick(33,{reference:'assets/lucid-reference.jpg',chatUrl:'codex://threads/01a11f50-51a8-7d71-95c1-9e162b067de1',prompt:'分析研究图1设计，帮我重新设计一张顶级的人物设计图，要求原创，不与图1人物相同，需要，完全不同的角色样貌、服饰、武器、动作姿势等等的角色组合图（不要完全参考 的角色属性，可以自由发挥人物的搭配和武器的多样性）。人物的背后添加组合的名字，英文字体，粗狂有力，大字。避免生成中出现杂碎的细节，画面要柔和让人物显的更干净立体。\n\n东方玄幻异能+赛博科技'}),
+divider('04','风格','用图像建立视觉倾向，再回到原创设计。','约 45 分钟','风格'),
+pick(25),pick(26),pick(27,{live:true}),pick(28,{title:'使用情绪板创建图片',notes:by[28].notes.replace('情绪版','情绪板').replace(/\n*提示词亦有调整[^\n]*/,'')}),
+{src:'personalize',kind:'mj-shot',title:'使用 Personalize',head:'使用 <em>Personalize</em>',eyebrow:'MIDJOURNEY / PERSONALIZE',lead:'告诉 Midjourney 你觉得什么好看，让生成结果更偏向你的审美。',image:'assets/mj-personalize.jpg',alt:'Midjourney Personalize 页面，提示创建第一个个人 profile',steps:['打开 Personalize','Create your first profile','按喜好挑选图片','提示词末尾加 --p'],chapter:'风格',live:true,images:[],notes:'Personalize：Midjourney 会根据你的挑选建立个人 profile。\n挑得越认真，profile 越能反映你的审美，随手乱选结果会比较杂。\n和 Moodboard 的区别：Moodboard 是你上传一组图来定方向；Personalize 是通过你的选择来学习你的偏好。\n用 --stylize 可以调整个人风格的影响强度。\n挑选数量和界面以现场页面为准。'},
+pick(30),pick(33,{reference:'assets/lucid-reference.jpg',chatUrl:'codex://threads/01a11f50-51a8-7d71-95c1-9e162b067de1',prompt:'分析研究图1设计，帮我重新设计一张顶级的人物设计图，要求原创，不与图1人物相同，需要，完全不同的角色样貌、服饰、武器、动作姿势等等的角色组合图（不要完全参考 的角色属性，可以自由发挥人物的搭配和武器的多样性）。人物的背后添加组合的名字，英文字体，粗狂有力，大字。避免生成中出现杂碎的细节，画面要柔和让人物显的更干净立体。\n\n东方玄幻异能+赛博科技'}),
 divider('05','收尾','回顾方法，布置作业，预告下一节。','约 15 分钟','收尾'),
-{src:'close-recap',kind:'close-recap',title:'今天学了什么',chapter:'收尾',images:[],notes:'收尾 1/4：用一条循环回顾今天，每一步对应一个章节。\n回到开场「今天带走」：一套选美术方向的方法 + 一个初步选定的方向。'},
-{src:'close-log',kind:'close-log',title:'学习记录模板',chapter:'收尾',images:[],notes:'收尾 2/4：自己继续学的方法。\n每次实验记四栏：问题、尝试、结果、结论。\n示例就是今天的实验 01：只写画家名字，Raw 下生成了真人照片，说明名字词不可靠。'},
-{src:'close-homework',kind:'close-homework',title:'作业',chapter:'收尾',images:[],notes:'收尾 3/4：作业分两档。\n大部分同学暂时没有 Midjourney 账号，建议几个人一组合买；没有账号的先完成基础档。\n提交方式待和其他老师商量后另行通知。'},
-{src:'close-next',kind:'close-next',title:'下节预告',chapter:'收尾',images:[],notes:'收尾 4/4：第 2 节「角色设计与动态展示」。\n先做五人群像，再用群像做视频，最后做不同风格的单人角色设计。\n今天选定的美术方向就是下节课的起点。'}
+{src:'close-recap',kind:'close-recap',title:'今天学了什么',chapter:'收尾',images:[],notes:'收尾 1/3：用一条循环回顾今天，每一步对应一个章节。\n回到开场「今天带走」：一套选美术方向的方法 + 一个初步选定的方向。'},
+{src:'close-homework',kind:'close-homework',title:'作业',chapter:'收尾',images:[],notes:'收尾 2/3：作业分两档。\n大部分同学暂时没有 Midjourney 账号，建议几个人一组合买；没有账号的先完成基础档。\n提交方式待和其他老师商量后另行通知。'},
+{src:'close-next',kind:'close-next',title:'下节预告',chapter:'收尾',images:[],notes:'收尾 3/3：第 2 节「角色设计与动态展示」。\n先做五人群像，再用群像做视频，最后做不同风格的单人角色设计。\n今天选定的美术方向就是下节课的起点。'}
 ];
+window.COURSE.forEach(s=>{if(s.chapter==='风格与原创')s.chapter='风格'});
 })();
