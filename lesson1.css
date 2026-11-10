@@ -355,3 +355,56 @@ div.look-questions>button.on{background:#2a2440;border-color:var(--lime)}
 .roadmap{grid-template-columns:repeat(7,minmax(0,1fr))}
 .roadmap li.spare{border-style:dashed;background:transparent}
 @media(max-width:850px){.roadmap{grid-template-columns:1fr 1fr}}
+
+/* 第一节篇章页 */
+.roadmap li.now{padding:0}
+.roadmap-entry{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  gap:12px;
+  padding:clamp(14px,1.4vw,26px);
+  border-radius:inherit;
+}
+.roadmap-entry:hover{background:#342b4b}
+#stage.lesson-opening-stage{padding:0;display:block;overflow:auto}
+#stage > .slide.lesson-opening{
+  grid-template-columns:minmax(0,4fr) minmax(0,6fr);
+  align-content:center;
+  align-items:center;
+  gap:clamp(30px,5vw,110px);
+  height:auto;
+  min-height:100%;
+  padding:clamp(28px,6vw,130px);
+  border:0;
+  background:radial-gradient(ellipse at 14% 74%,#302540 0%,#211e31 36%,var(--panel) 76%);
+}
+.lesson-opening-number{
+  color:var(--lime);
+  font-size:clamp(120px,min(28vw,48vh),580px);
+  font-weight:750;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.085em;
+  line-height:.82;
+}
+.lesson-opening-copy{min-width:0}
+.slide.lesson-opening .eyebrow{
+  font-size:clamp(11px,1vw,17px);
+  margin:0 0 clamp(16px,2.7vh,30px);
+}
+.slide.lesson-opening h1{
+  margin:0;
+  font-size:clamp(36px,min(6.2vw,10vh),130px);
+  line-height:1.08;
+  overflow-wrap:anywhere;
+}
+.slide.lesson-opening .body{
+  max-width:32em;
+  margin-top:clamp(18px,4vh,45px);
+  color:#c6c2d3;
+}
+@media(max-width:850px){
+  #stage > .slide.lesson-opening{grid-template-columns:1fr;gap:clamp(22px,5vh,46px)}
+  .lesson-opening-number{font-size:clamp(96px,min(32vw,24vh),220px)}
+  .slide.lesson-opening h1{font-size:clamp(30px,7.5vw,65px)}
+}
